@@ -75,10 +75,8 @@ a {
 }
 
 header{
-    
     width: 100%;
-    height: 38px;
-     
+    height: 40px;
     // border: 1px  #CCC solid;
     // border: 1px solid red;
 }
@@ -89,8 +87,6 @@ header{
     margin-left: auto;
     margin-right: auto;
     margin-top: 25px;
-    
-    
 }
 
 .search_bar{
@@ -103,10 +99,10 @@ header{
     // box-shadow: -8px -8px 8px -10px black;
 }
 
-.fas{
+.fa-map-marker-alt{
     margin-left: 65px;
     font-size: medium ;
-    margin-top: 0.9px;
+    margin-top: 4px;
 }
 
 .search_input{
@@ -126,12 +122,12 @@ header{
     background-color: rgb(246, 246, 246);
     padding: 20px 20px 20px 20px;
     h2{
-        margin: 20px 10px 15px 10px;
-        
+        margin: 25px 30px 15px 30px;
+        font-size: 1.50rem;
     }
     p{
         font-size: 1.1rem;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
     }
 }
 
@@ -139,10 +135,63 @@ header{
     width: 220px;
     height: 48px;
     border: none;
+    display: block;
+    margin: auto;
     border-radius: 50px 50px 50px 50px;
     background: linear-gradient(to bottom right, $secondarycolor, $primarycolor);
     color: white;
-    font-size: 1rem;
-    margin-left: 60px;
-    margin-bottom: 35px;
+    font-size: 1rem; 
+    margin-bottom: 35px; 
+    box-shadow: 1px 4px 10px rgb(141, 140, 140);
+}
+
+.howto-container h2{
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+}
+.howto-card123{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.howto-card{
+    display: flex;
+    align-items: center;
+    border-radius: 25px 25px 25px 25px;
+    background-color: rgb(246, 246, 246);
+    box-shadow: 1px 4px 10px rgb(226, 225, 225);
+    width: 330px;
+    height: 70px;
+    margin-left: 15px;
+    margin-bottom: 25px;
+    .howto-num{
+        font-size: .9rem;
+        margin-left: -10px;
+        padding-left: 7px;
+        padding-top: 5px;
+        background-color: $primarycolor;
+        border-radius: 50%;
+        width: 1.6em;
+        height: 1.6em;
+        color: white;
+        margin-bottom: 5px;
+    }
+    .howto-icon{
+        margin: 0 25px 0 25px;
+    }
+    p{
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    &:hover{
+        background: rgb(245, 237, 255);
+        .howto-icon{
+            color: $primarycolor;
+        }
+    }
+    
 }
