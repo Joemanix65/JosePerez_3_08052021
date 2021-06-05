@@ -5,7 +5,7 @@
 }
 
 body {
-  line-height: 1;
+  line-height: 1.6rem;
   margin: 0;
   font-family: "Roboto", sans-serif;
   font-size: 1.1rem;
@@ -161,7 +161,6 @@ header {
   font-size: 0.9rem;
   margin-left: -10px;
   padding-left: 7px;
-  padding-top: 5px;
   background-color: #9356DC;
   border-radius: 50%;
   width: 1.6em;
@@ -181,6 +180,95 @@ header {
 }
 .howto-card:hover .howto-icon {
   color: #9356DC;
+}
+
+.restos {
+  background-color: #f6f6f6;
+  padding: 50px 20px 20px 20px;
+  margin-top: 40px;
+}
+.restos h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.resto-link {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+  background-color: white;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.img-container {
+  display: flex;
+  width: 100%;
+}
+
+.img-resto {
+  width: 100%;
+  height: 200px;
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+}
+
+.nouveau {
+  background-color: #99E2D0;
+  color: #2c9c81;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 3px 12px;
+  position: absolute;
+  border-radius: 2px;
+  top: 15px;
+  right: 15px;
+}
+
+@keyframes fill {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.card-bottom .far {
+  margin-right: 20px;
+  margin-top: 20px;
+  font-size: 1.4rem;
+  color: black;
+}
+.card-bottom .far:hover {
+  animation: fill 0.4s ease-in-out;
+  font-size: 1.4rem;
+  color: #9356DC;
+  display: block;
+  opacity: 1;
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.card-text {
+  height: 60px;
+  margin-top: 15px;
+  margin-left: 15px;
+  font-size: 0.9rem;
+}
+.card-text p {
+  font-size: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
