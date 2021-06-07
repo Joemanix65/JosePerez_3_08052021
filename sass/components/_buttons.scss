@@ -1,8 +1,6 @@
 .btn-explorer{
     width: 220px;
     height: 48px;
-    border: none;
-    display: block;
     margin: auto;
     border-radius: 50px 50px 50px 50px;
     background: linear-gradient(to bottom right, $secondarycolor, $primarycolor);
@@ -10,4 +8,10 @@
     font-size: 1rem; 
     margin-bottom: 35px; 
     box-shadow: 1px 4px 10px rgb(141, 140, 140);
+    &:hover{
+        opacity: 0.9;
+        box-shadow: 1px 4px 12px rgb(97, 96, 96);
+    }
 }
+
+// fichier coeur.scss dans components idem spin loader et pour les card
