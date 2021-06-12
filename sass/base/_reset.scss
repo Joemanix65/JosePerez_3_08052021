@@ -5,8 +5,14 @@
 }
 
 body {
+    line-height: 1.6rem;
     font-family: $roboto;
     font-size: 1.1rem;
+    @include for-big-desktop {
+        width: 1300px;
+        margin: auto;
+    }
+    
 }
 
 a {

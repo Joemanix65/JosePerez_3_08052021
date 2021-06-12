@@ -5,8 +5,15 @@
 }
 
 body {
+  line-height: 1.6rem;
   font-family: "Roboto", sans-serif;
   font-size: 1.1rem;
+}
+@media (min-width: 1400px) {
+  body {
+    width: 1300px;
+    margin: auto;
+  }
 }
 
 a {
@@ -30,93 +37,14 @@ img {
   margin: auto;
   border-radius: 50px 50px 50px 50px;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  color: white;
+  color: #FFFFFF;
   font-size: 1rem;
   margin-bottom: 35px;
-  box-shadow: 1px 4px 10px #8d8c8c;
+  box-shadow: 1px 4px 10px #CCCCCC;
 }
 .btn-explorer:hover {
   opacity: 0.9;
-  box-shadow: 1px 4px 12px #616060;
-}
-
-header {
-  width: 100%;
-  height: 40px;
-}
-
-.img_logo {
-  width: 42%;
-  max-width: 180px;
-  height: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 25px;
-}
-
-.footer-page {
-  width: 100%;
-  background-color: #353535;
-  display: flex;
-  flex-direction: column;
-}
-.footer-page h3 {
-  font-family: "Shrikhand", cursive;
-  color: white;
-  font-size: 1.1rem;
-  font-weight: 100;
-  margin-top: 20px;
-  margin-left: 20px;
-  margin-bottom: 10px;
-}
-
-.proposal {
-  color: white;
-  font-size: 1rem;
-  font-weight: 300;
-  margin-left: 20px;
-  margin-bottom: 5px;
-}
-.proposal .fas {
-  font-size: 0.9rem;
-  margin-right: 10px;
-  margin-bottom: 5px;
-}
-
-.partner {
-  color: white;
-  font-size: 1rem;
-  font-weight: 300;
-  margin-left: 20px;
-  margin-bottom: 5px;
-}
-.partner .fas {
-  font-size: 0.8rem;
-  margin-right: 5px;
-  margin-bottom: 5px;
-}
-
-.mentions {
-  color: white;
-  font-size: 1rem;
-  font-weight: 300;
-  margin-left: 20px;
-}
-
-.contact {
-  color: white;
-  font-size: 1rem;
-  font-weight: 300;
-  margin-left: 20px;
-  margin-bottom: 30px;
-}
-
-body {
-  line-height: 1.6rem;
-  margin: 0;
-  font-family: "Roboto", sans-serif;
-  font-size: 1.1rem;
+  box-shadow: 1px 4px 12px #b3b3b3;
 }
 
 .loader-box {
@@ -125,7 +53,7 @@ body {
   position: fixed;
   z-index: 9999;
   opacity: 0;
-  background: #f5edff;
+  background: #F5EDFF;
   -webkit-animation: loading 2s linear;
   -o-animation: loading 2s linear;
   animation: loading 2s linear;
@@ -142,7 +70,7 @@ body {
   border-top: 20px solid #9356DC;
   border-bottom: 20px solid #FF79DA;
   border-right: 20px solid #99E2D0;
-  border-left: 20px solid #eaeaea;
+  border-left: 20px solid #EAEAEA;
   border-radius: 50%;
   width: 180px;
   height: 180px;
@@ -168,13 +96,91 @@ body {
     transform: translate(-50%, -50%) rotate(360deg);
   }
 }
-.search_bar {
+header {
+  width: 100%;
+  height: 40px;
+}
+
+.img_logo {
+  width: 42%;
+  max-width: 180px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+}
+
+.header-arrow {
+  display: flex;
+  justify-content: space-around;
+  background-color: red;
+}
+
+.footer-page {
+  width: 100%;
+  background-color: #535353;
+  display: flex;
+  flex-direction: column;
+}
+.footer-page h3 {
+  font-family: "Shrikhand", cursive;
+  color: #FFFFFF;
+  font-size: 1.1rem;
+  font-weight: 100;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.proposal {
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 300;
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+.proposal .fas {
+  font-size: 0.9rem;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.partner {
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 300;
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+.partner .fas {
+  font-size: 0.8rem;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.mentions {
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 300;
+  margin-left: 20px;
+}
+
+.contact {
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 300;
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+
+.search-bar {
   width: 100%;
   padding: 15px 0 15px;
   display: flex;
   justify-content: center;
-  background-color: #eaeaea;
-  box-shadow: inset 0px 11px 8px -10px #CCC;
+  background-color: #EAEAEA;
+  box-shadow: inset 0px 11px 8px -10px #CCCCCC;
 }
 
 .fa-map-marker-alt {
@@ -186,7 +192,7 @@ body {
 .search_input {
   height: 22px;
   border: none;
-  background-color: #eaeaea;
+  background-color: #EAEAEA;
   font-weight: 600;
   font-size: 1rem;
   margin-left: 15px;
@@ -197,7 +203,7 @@ body {
   flex-direction: column;
   width: 100%;
   text-align: center;
-  background-color: #f6f6f6;
+  background-color: #F6F6F6;
   padding: 20px 20px 20px 20px;
 }
 .booking h2 {
@@ -222,13 +228,19 @@ body {
   align-items: center;
   justify-content: center;
 }
+@media (min-width: 1200px) {
+  .howto-card123 {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
 
 .howto-card {
   display: flex;
   align-items: center;
   border-radius: 25px 25px 25px 25px;
-  background-color: #f6f6f6;
-  box-shadow: 1px 4px 10px #e2e1e1;
+  background-color: #F6F6F6;
+  box-shadow: 1px 4px 10px #CCCCCC;
   width: 330px;
   height: 70px;
   margin-left: 15px;
@@ -242,7 +254,7 @@ body {
   border-radius: 50%;
   width: 1.6em;
   height: 1.6em;
-  color: white;
+  color: #FFFFFF;
   margin-bottom: 5px;
 }
 .howto-card .howto-icon {
@@ -253,16 +265,17 @@ body {
   font-weight: 600;
 }
 .howto-card:hover {
-  background: #f5edff;
+  background: #F5EDFF;
 }
 .howto-card:hover .howto-icon {
   color: #9356DC;
 }
 
 .restos {
-  background-color: #f6f6f6;
+  background-color: #F6F6F6;
   padding: 50px 20px 20px 20px;
   margin-top: 40px;
+  padding-bottom: 10px;
 }
 .restos h2 {
   margin-bottom: 20px;
@@ -270,20 +283,36 @@ body {
 }
 
 .resto-link {
-  width: 100%;
+  width: 90%;
   height: 20%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   position: relative;
-  background-color: white;
+  background-color: #FFFFFF;
   border-radius: 20px;
   margin-bottom: 20px;
-  box-shadow: 0px 2px 6px 2px #c9c6c6;
+  margin-left: 20px;
+  box-shadow: 0px 2px 6px 2px #CCCCCC;
+}
+@media (min-width: 768px) {
+  .resto-link {
+    width: 40%;
+    flex-wrap: wrap;
+  }
 }
 
 .card-container {
-  margin-bottom: 50px;
+  background-color: #F6F6F6;
+  padding: 10px;
+}
+@media (min-width: 768px) {
+  .card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
 }
 
 .img-container {
@@ -328,7 +357,7 @@ body {
   margin-right: 20px;
   margin-top: 20px;
   font-size: 1.4rem;
-  color: black;
+  color: #000000;
 }
 .card-bottom .far:hover {
   animation: fill 0.4s ease-in-out;

@@ -1,11 +1,11 @@
 .footer-page{
     width: 100%;
-    background-color: #353535;
+    background-color: $background3;
     display: flex;
     flex-direction: column;
     h3{
         font-family: $Shrikhand;
-        color: white;
+        color: $spfontcolor;
         font-size: 1.1rem;
         font-weight: 100;
         margin-top: 20px;
@@ -16,7 +16,7 @@
 
     
 .proposal{
-    color: white;
+    color: $spfontcolor;
     font-size: 1rem;
     font-weight: 300;
     margin-left: 20px;
@@ -29,7 +29,7 @@
 }
 
 .partner{
-    color: white;
+    color: $spfontcolor;
     font-size: 1rem;
     font-weight: 300;
     margin-left: 20px;
@@ -42,14 +42,14 @@
 }  
 
 .mentions{
-    color: white;
+    color: $spfontcolor;
     font-size: 1rem;
     font-weight: 300;
     margin-left: 20px;
 }
 
 .contact{
-    color: white;
+    color: $spfontcolor;
     font-size: 1rem;
     font-weight: 300;
     margin-left: 20px;

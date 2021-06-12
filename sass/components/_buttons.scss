@@ -4,14 +4,14 @@
     margin: auto;
     border-radius: 50px 50px 50px 50px;
     background: linear-gradient(to bottom right, $secondarycolor, $primarycolor);
-    color: white;
+    color: $spfontcolor;
     font-size: 1rem; 
     margin-bottom: 35px; 
-    box-shadow: 1px 4px 10px rgb(141, 140, 140);
+    box-shadow: 1px 4px 10px $shadowcolor;
     &:hover{
         opacity: 0.9;
-        box-shadow: 1px 4px 12px rgb(97, 96, 96);
+        box-shadow: 1px 4px 12px darken($shadowcolor, 10%);
     }
 }
 
-// fichier coeur.scss dans components idem spin loader et pour les card
+// fichier coeur.scss dans components idem spin loader et pour les cards

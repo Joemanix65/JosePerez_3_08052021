@@ -1,0 +1,50 @@
+.loader-box{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 9999;
+    opacity: 0;
+    background: $quartecolor;
+    -webkit-animation: loading 2s linear;
+    -o-animation: loading 2s linear;
+    animation: loading 2s linear;
+    pointer-events: none;
+    top: 0;
+}
+
+.loader{
+    /* placement du loader au millieu de la page */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-top:20px solid $primarycolor; 
+    border-bottom:20px solid $secondarycolor;
+    border-right: 20px solid $tertiarycolor;
+    border-left: 20px solid $background2;
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    -webkit-animation: spin 2s linear;
+    -o-animation: spin 2s linear;
+    animation: spin 2s linear;
+}
+
+/* animation du loader */
+@keyframes loading {
+    0% {
+      opacity: 100%;
+    }
+    100% {
+      opacity: 100%;
+    }
+  }
+
+@keyframes spin {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
