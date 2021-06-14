@@ -1,0 +1,31 @@
+@keyframes fill {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+
+.far{
+    margin-right: 20px;
+    margin-top: 20px;
+    font-size: 1.4rem;
+    color: $blackcolor;
+    &:hover{
+        animation: fill 0.4s ease-in-out;
+        font-size: 1.4rem;
+        color: $primarycolor;
+        display: block;
+        opacity: 1;
+        background: -webkit-linear-gradient($primarycolor, $secondarycolor);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bold;
+    }
+}

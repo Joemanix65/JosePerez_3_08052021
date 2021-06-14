@@ -31,7 +31,7 @@ img {
   max-width: 100%;
 }
 
-.btn-explorer {
+.btn {
   width: 220px;
   height: 48px;
   margin: auto;
@@ -42,177 +42,9 @@ img {
   margin-bottom: 35px;
   box-shadow: 1px 4px 10px #CCCCCC;
 }
-.btn-explorer:hover {
+.btn:hover {
   opacity: 0.9;
   box-shadow: 1px 4px 12px #b3b3b3;
-}
-
-.loader-box {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  z-index: 9999;
-  opacity: 0;
-  background: #F5EDFF;
-  -webkit-animation: loading 2s linear;
-  -o-animation: loading 2s linear;
-  animation: loading 2s linear;
-  pointer-events: none;
-  top: 0;
-}
-
-.loader {
-  /* placement du loader au millieu de la page */
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  border-top: 20px solid #9356DC;
-  border-bottom: 20px solid #FF79DA;
-  border-right: 20px solid #99E2D0;
-  border-left: 20px solid #EAEAEA;
-  border-radius: 50%;
-  width: 180px;
-  height: 180px;
-  -webkit-animation: spin 2s linear;
-  -o-animation: spin 2s linear;
-  animation: spin 2s linear;
-}
-
-/* animation du loader */
-@keyframes loading {
-  0% {
-    opacity: 100%;
-  }
-  100% {
-    opacity: 100%;
-  }
-}
-@keyframes spin {
-  0% {
-    transform: translate(-50%, -50%) rotate(0deg);
-  }
-  100% {
-    transform: translate(-50%, -50%) rotate(360deg);
-  }
-}
-header {
-  width: 100%;
-  height: 40px;
-}
-
-.img_logo {
-  width: 42%;
-  max-width: 180px;
-  height: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 25px;
-}
-
-.header-arrow {
-  display: flex;
-  justify-content: space-around;
-  background-color: red;
-}
-
-.footer-page {
-  width: 100%;
-  background-color: #535353;
-  display: flex;
-  flex-direction: column;
-}
-.footer-page h3 {
-  font-family: "Shrikhand", cursive;
-  color: #FFFFFF;
-  font-size: 1.1rem;
-  font-weight: 100;
-  margin-top: 20px;
-  margin-left: 20px;
-  margin-bottom: 10px;
-}
-
-.proposal {
-  color: #FFFFFF;
-  font-size: 1rem;
-  font-weight: 300;
-  margin-left: 20px;
-  margin-bottom: 5px;
-}
-.proposal .fas {
-  font-size: 0.9rem;
-  margin-right: 10px;
-  margin-bottom: 5px;
-}
-
-.partner {
-  color: #FFFFFF;
-  font-size: 1rem;
-  font-weight: 300;
-  margin-left: 20px;
-  margin-bottom: 5px;
-}
-.partner .fas {
-  font-size: 0.8rem;
-  margin-right: 5px;
-  margin-bottom: 5px;
-}
-
-.mentions {
-  color: #FFFFFF;
-  font-size: 1rem;
-  font-weight: 300;
-  margin-left: 20px;
-}
-
-.contact {
-  color: #FFFFFF;
-  font-size: 1rem;
-  font-weight: 300;
-  margin-left: 20px;
-  margin-bottom: 30px;
-}
-
-.search-bar {
-  width: 100%;
-  padding: 15px 0 15px;
-  display: flex;
-  justify-content: center;
-  background-color: #EAEAEA;
-  box-shadow: inset 0px 11px 8px -10px #CCCCCC;
-}
-
-.fa-map-marker-alt {
-  margin-left: 65px;
-  font-size: medium;
-  margin-top: 4px;
-}
-
-.search_input {
-  height: 22px;
-  border: none;
-  background-color: #EAEAEA;
-  font-weight: 600;
-  font-size: 1rem;
-  margin-left: 15px;
-}
-
-.booking {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  text-align: center;
-  background-color: #F6F6F6;
-  padding: 20px 20px 20px 20px;
-}
-.booking h2 {
-  margin: 25px 30px 15px 30px;
-  font-size: 1.5rem;
-}
-.booking p {
-  font-size: 1.1rem;
-  margin-bottom: 40px;
 }
 
 .howto-container h2 {
@@ -338,6 +170,21 @@ header {
   right: 15px;
 }
 
+.card-text {
+  height: 60px;
+  margin-top: 15px;
+  margin-left: 15px;
+  font-size: 0.9rem;
+}
+.card-text p {
+  font-size: 1rem;
+}
+
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
 @keyframes fill {
   0% {
     opacity: 0;
@@ -349,17 +196,13 @@ header {
     opacity: 1;
   }
 }
-.card-bottom {
-  display: flex;
-  justify-content: space-between;
-}
-.card-bottom .far {
+.far {
   margin-right: 20px;
   margin-top: 20px;
   font-size: 1.4rem;
   color: #000000;
 }
-.card-bottom .far:hover {
+.far:hover {
   animation: fill 0.4s ease-in-out;
   font-size: 1.4rem;
   color: #9356DC;
@@ -372,14 +215,171 @@ header {
   font-weight: bold;
 }
 
-.card-text {
-  height: 60px;
-  margin-top: 15px;
-  margin-left: 15px;
-  font-size: 0.9rem;
+.loader-box {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 9999;
+  opacity: 0;
+  background: #F5EDFF;
+  -webkit-animation: loading 2s linear;
+  -o-animation: loading 2s linear;
+  animation: loading 2s linear;
+  pointer-events: none;
+  top: 0;
 }
-.card-text p {
+
+.loader {
+  /* placement du loader au millieu de la page */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-top: 20px solid #9356DC;
+  border-bottom: 20px solid #FF79DA;
+  border-right: 20px solid #99E2D0;
+  border-left: 20px solid #EAEAEA;
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  -webkit-animation: spin 2s linear;
+  -o-animation: spin 2s linear;
+  animation: spin 2s linear;
+}
+
+/* animation du loader */
+@keyframes loading {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+.search-bar {
+  width: 100%;
+  padding: 15px 0 15px;
+  display: flex;
+  justify-content: center;
+  background-color: #EAEAEA;
+  box-shadow: inset 0px 11px 8px -10px #CCCCCC;
+}
+
+.fa-map-marker-alt {
+  margin-left: 65px;
+  font-size: medium;
+  margin-top: 4px;
+}
+
+.search_input {
+  height: 22px;
+  border: none;
+  background-color: #EAEAEA;
+  font-weight: 600;
   font-size: 1rem;
+  margin-left: 15px;
+}
+
+.booking {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  background-color: #F6F6F6;
+  padding: 20px 20px 20px 20px;
+}
+.booking h2 {
+  margin: 25px 30px 15px 30px;
+  font-size: 1.5rem;
+}
+.booking p {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+}
+
+header {
+  width: 100%;
+  height: 40px;
+}
+
+.img_logo {
+  width: 42%;
+  max-width: 180px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+}
+
+.fa-arrow-left {
+  position: fixed;
+  top: 30px;
+  left: 20px;
+}
+
+.footer-page {
+  width: 100%;
+  background-color: #535353;
+  display: flex;
+  flex-direction: column;
+}
+.footer-page h3 {
+  font-family: "Shrikhand", cursive;
+  color: #FFFFFF;
+  font-size: 1.1rem;
+  font-weight: 100;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.proposal {
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 300;
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+.proposal .fas {
+  font-size: 0.9rem;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.partner {
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 300;
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+.partner .fas {
+  font-size: 0.8rem;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.mentions {
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 300;
+  margin-left: 20px;
+}
+
+.contact {
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 300;
+  margin-left: 20px;
+  margin-bottom: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

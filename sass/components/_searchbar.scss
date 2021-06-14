@@ -1,0 +1,23 @@
+.search-bar{
+    width: 100%;
+    padding: 15px 0 15px;
+    display: flex;
+    justify-content: center;
+    background-color: $background2;
+    box-shadow: inset 0px 11px 8px -10px $shadowcolor;
+}
+
+.fa-map-marker-alt{
+    margin-left: 65px;
+    font-size: medium ;
+    margin-top: 4px;
+}
+
+.search_input{
+    height: 22px;
+    border: none;
+    background-color: $background2;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-left: 15px;
+}
