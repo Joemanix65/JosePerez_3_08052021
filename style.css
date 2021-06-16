@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -305,6 +306,65 @@ img {
   margin-bottom: 40px;
 }
 
+.section-menu {
+  width: 100%;
+  height: auto;
+  background-color: #F6F6F6;
+  border-radius: 30px 30px 0 0;
+  top: 200px;
+  position: relative;
+  z-index: 2;
+}
+.section-menu h1 {
+  font-family: "Shrikhand", cursive;
+  font-weight: 200;
+  padding: 30px 0 0 0;
+}
+
+.titre-menu {
+  display: flex;
+  justify-content: space-around;
+}
+.titre-menu i {
+  margin-top: 30px;
+}
+
+h4 {
+  margin-left: 20px;
+  margin-top: 30px;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+h4:after {
+  content: "";
+  display: block;
+  width: 10%;
+  bottom: 0;
+  border-bottom: 3px solid #99E2D0;
+}
+
+.entrée1 {
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px 15px 15px 15px;
+  background-color: #FFFFFF;
+  box-shadow: 1px 4px 10px #CCCCCC;
+  width: auto;
+  height: 70px;
+  margin: 20px 15px 25px 15px;
+}
+.entrée1 h5 {
+  margin: 10px 0 0 10px;
+  font-size: 1.2rem;
+}
+.entrée1 p {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
 header {
   width: 100%;
   height: 40px;
@@ -323,6 +383,13 @@ header {
   position: fixed;
   top: 30px;
   left: 20px;
+}
+
+.img-menu {
+  max-width: 1300px;
+  max-height: 400px;
+  position: absolute;
+  z-index: 1;
 }
 
 .footer-page {
