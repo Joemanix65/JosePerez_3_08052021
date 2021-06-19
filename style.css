@@ -197,13 +197,13 @@ img {
     opacity: 1;
   }
 }
-.far {
+.fa-heart {
   margin-right: 20px;
   margin-top: 20px;
   font-size: 1.4rem;
   color: #000000;
 }
-.far:hover {
+.fa-heart:hover {
   animation: fill 0.4s ease-in-out;
   font-size: 1.4rem;
   color: #9356DC;
@@ -344,9 +344,32 @@ h4:after {
   border-bottom: 3px solid #99E2D0;
 }
 
-.entrée1 {
+@keyframes fa-check {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes valid-check {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50px);
+  }
+}
+@keyframes prix {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-5px);
+  }
+}
+.entrée {
   display: flex;
-  flex-direction: column;
   border-radius: 15px 15px 15px 15px;
   background-color: #FFFFFF;
   box-shadow: 1px 4px 10px #CCCCCC;
@@ -354,15 +377,63 @@ h4:after {
   height: 70px;
   margin: 20px 15px 25px 15px;
 }
-.entrée1 h5 {
+.entrée h5 {
   margin: 10px 0 0 10px;
   font-size: 1.2rem;
 }
-.entrée1 p {
-  display: flex;
-  justify-content: space-between;
+.entrée p {
   margin-left: 10px;
-  margin-right: 20px;
+}
+.entrée .text-card {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  position: relative;
+  width: 70%;
+}
+.entrée .fa-check-circle {
+  position: absolute;
+  visibility: hidden;
+}
+.entrée .prix {
+  position: absolute;
+  right: 30px;
+  margin-top: 35px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.entrée:hover .prix {
+  animation: prix ease 2s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  right: 10px;
+  float: right;
+  position: static;
+}
+.entrée:hover .valid-check-mover {
+  animation: valid-check ease 0.5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  background-color: #99E2D0;
+  position: relative;
+  top: 0px;
+  right: -94px;
+  width: 50px;
+  height: 70px;
+  display: block;
+  flex: 0 0 20%;
+  max-width: 70px;
+  border-radius: 0 15px 15px 0;
+}
+.entrée:hover .fa-check-circle {
+  animation: fa-check 0.6s linear infinite;
+  animation-iteration-count: 1;
+  background-color: #99E2D0;
+  color: #FFFFFF;
+  left: 38%;
+  position: absolute;
+  top: 40%;
+  visibility: visible;
 }
 
 header {
@@ -388,6 +459,7 @@ header {
 .img-menu {
   max-width: 1300px;
   max-height: 400px;
+  object-fit: cover;
   position: absolute;
   z-index: 1;
 }

@@ -21,6 +21,7 @@ header{
 .img-menu{
     max-width: 1300px;
     max-height: 400px;
+    object-fit: cover;
     position:absolute;
     z-index:1;
 }
