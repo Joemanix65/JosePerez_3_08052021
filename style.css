@@ -1,4 +1,3 @@
-@charset "UTF-8";
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -22,7 +21,7 @@ a {
   text-decoration: none;
 }
 
-button {
+.btn {
   border: none;
   cursor: pointer;
 }
@@ -46,6 +45,12 @@ img {
 .btn:hover {
   opacity: 0.9;
   box-shadow: 1px 4px 12px #b3b3b3;
+}
+
+.commander {
+  display: flex;
+  justify-content: center;
+  width: 180px;
 }
 
 .howto-container h2 {
@@ -346,10 +351,10 @@ h4:after {
 
 @keyframes fa-check {
   0% {
-    transform: rotate(360deg);
+    transform: rotate(0deg);
   }
   100% {
-    transform: rotate(0deg);
+    transform: rotate(360deg);
   }
 }
 @keyframes valid-check {
@@ -368,7 +373,7 @@ h4:after {
     transform: translateX(-5px);
   }
 }
-.entrée {
+.choix {
   display: flex;
   border-radius: 15px 15px 15px 15px;
   background-color: #FFFFFF;
@@ -377,59 +382,60 @@ h4:after {
   height: 70px;
   margin: 20px 15px 25px 15px;
 }
-.entrée h5 {
+.choix h5 {
   margin: 10px 0 0 10px;
   font-size: 1.2rem;
 }
-.entrée p {
+.choix p {
   margin-left: 10px;
-}
-.entrée .text-card {
   overflow: hidden;
-  text-overflow: ellipsis;
   white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.choix .text-card {
   position: relative;
   width: 70%;
 }
-.entrée .fa-check-circle {
+.choix .fa-check-circle {
   position: absolute;
   visibility: hidden;
 }
-.entrée .prix {
+.choix .prix {
   position: absolute;
   right: 30px;
   margin-top: 35px;
   font-weight: 600;
   font-size: 1rem;
 }
-.entrée:hover .prix {
-  animation: prix ease 2s;
+.choix:hover .prix {
+  animation: prix ease 3s;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
   right: 10px;
   float: right;
   position: static;
 }
-.entrée:hover .valid-check-mover {
+.choix:hover .valid-check-mover {
   animation: valid-check ease 0.5s;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
   background-color: #99E2D0;
   position: relative;
   top: 0px;
-  right: -94px;
-  width: 50px;
+  right: -95px;
+  width: 70px;
   height: 70px;
-  display: block;
-  flex: 0 0 20%;
   max-width: 70px;
   border-radius: 0 15px 15px 0;
 }
-.entrée:hover .fa-check-circle {
-  animation: fa-check 0.6s linear infinite;
+.choix:hover .fa-check-circle {
+  animation: fa-check 0.5s linear infinite;
+  animation-delay: 0.2s;
   animation-iteration-count: 1;
   background-color: #99E2D0;
   color: #FFFFFF;
+  display: flex;
+  align-self: flex-end;
   left: 38%;
   position: absolute;
   top: 40%;
@@ -469,6 +475,7 @@ header {
   background-color: #535353;
   display: flex;
   flex-direction: column;
+  z-index: 3;
 }
 .footer-page h3 {
   font-family: "Shrikhand", cursive;
