@@ -3,7 +3,8 @@
     background-color: $background3;
     display: flex;
     flex-direction: column;
-    z-index:3;
+    position: relative;
+    z-index: 2;
     h3{
         font-family: $Shrikhand;
         color: $spfontcolor;

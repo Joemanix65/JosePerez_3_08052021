@@ -4,6 +4,8 @@
     background-color: $background1;
     border-radius: 30px 30px 0 0;
     top: 200px;
+    padding-bottom: 50px;
+    margin-bottom: 200px;
     position: relative;
     z-index:2;
     h1{
@@ -40,7 +42,7 @@ h4:after{
 //rotation du check
 @keyframes fa-check {
     0%  { 
-        transform: rotate(0deg);
+        transform: rotate(180deg);
     }
   100%{ 
       transform: rotate(360deg);
@@ -49,97 +51,105 @@ h4:after{
 
 // déplacement du check
 @keyframes valid-check {
-    0% { 
+    from { 
+        right: -50px;
         transform: translateX(0); 
     }
-    100% { 
-        transform: translateX(-50px); 
+    to { 
+        right: -40px;
+        transform: translateX(-40%); 
     }
     }
 
  // déplacement du prix   
 @keyframes prix{
     0% { 
-        transform: translateX(0px); 
+        transform: translateX(30px); 
     }
     100% { 
-        transform: translateX(-5px); 
+        transform: translateX(10px); 
     }
     }
 
-.choix{
+.choix.effet{
     display: flex;
-        border-radius: 15px 15px 15px 15px;
-        background-color: $spfontcolor;
-        box-shadow: 1px 4px 10px $shadowcolor;
-        width: auto;
-        height: 70px;
-        margin: 20px 15px 25px 15px;
+    border-radius: 15px 15px 15px 15px;
+    background-color: $spfontcolor;
+    box-shadow: 1px 4px 10px $shadowcolor;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    width: auto;
+    height: 70px;
+    margin: 20px 15px 25px 15px;
         
-        h5{
-            margin: 10px 0 0 10px;
-            font-size: 1.2rem;
-        }
-        p{
-            margin-left: 10px;
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-        }
-        .text-card{
-            
-            position: relative;
-            width: 70%;
-        }
-        .fa-check-circle{
-            position: absolute;
-            visibility: hidden;
-        }
-        .prix{
-            position: absolute;
-            right: 30px;
-            margin-top: 35px;
-            font-weight: 600;
-            font-size: 1rem;
-        }
-    &:hover{
-    
-
-    .prix{
-        animation: prix ease 3s;
-        animation-fill-mode: forwards;
-        animation-iteration-count: 1;
-        right: 10px;
-        float: right;
-        position: static;
+    h5{
+        margin: 10px 0 0 10px;
+        font-size: 1.1rem;
     }
 
-    .valid-check-mover{
-        animation: valid-check ease .5s;
-        animation-fill-mode: forwards;
-        animation-iteration-count: 1;
-        background-color: $tertiarycolor;
+    p{
+        margin-left: 10px;
+        font-size: 0.95rem;
+        
+    }
+
+    .text-card{
         position: relative;
-        top: 0px;
-        right: -95px;
-        width: 70px;
-        height: 70px;
-        max-width: 70px;
-        border-radius: 0 15px 15px 0;
+        width: 70%;
+        
+       
     }
 
     .fa-check-circle{
-        animation: fa-check .5s linear infinite; 
-        animation-delay: .2s;
-        animation-iteration-count: 1;
-        background-color: $tertiarycolor;
-        color: $spfontcolor;
-        display: flex;
-        align-self: flex-end;
-        left: 38%;
         position: absolute;
-        top: 40%;
-        visibility: visible;
+        visibility: hidden;
+        
     }
-}
+
+    .prix{
+        position: absolute;
+        right: 30px;
+        margin-top: 35px;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+
+    &:hover{
+        
+       
+
+        .prix{
+            animation: prix ease .6s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 1;
+            right: 5px;
+            float: right;
+            position: static;
+        }
+
+        .valid-check-mover{
+            animation: valid-check ease-in-out .3s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 1;
+            background-color: $tertiarycolor;
+            position: absolute;
+            right: -5%;
+            width: 80px;
+            height: 70px;
+        }
+
+        .fa-check-circle{
+            animation: fa-check .4s linear infinite; 
+            animation-iteration-count: 1;
+            background-color: $tertiarycolor;
+            color: $spfontcolor;
+            display: flex;
+            justify-content: center;
+            left: 38%;
+            position: absolute;
+            top: 40%;
+            visibility: visible;
+        }
+    }
 }
