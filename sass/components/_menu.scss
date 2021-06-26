@@ -2,7 +2,7 @@
     width: 100%;
     height: auto;
     background-color: $background1;
-    border-radius: 30px 30px 0 0;
+    border-radius: 40px 40px 0 0;
     top: 200px;
     padding-bottom: 50px;
     margin-bottom: 200px;
@@ -11,16 +11,14 @@
     h1{
         font-family: $Shrikhand;
         font-weight: 200;
-        padding: 30px 0 0 0;
+        padding: 40px 0 0 0;
     }
 }
 
 .titre-menu{
     display: flex;
     justify-content: space-around;
-    i{
-        margin-top: 30px;
-    }
+    margin-left: -8px;
 }
 
 h4{
@@ -82,7 +80,7 @@ h4:after{
     width: auto;
     height: 70px;
     margin: 20px 15px 25px 15px;
-        
+    
     h5{
         margin: 10px 0 0 10px;
         font-size: 1.1rem;
@@ -153,3 +151,19 @@ h4:after{
         }
     }
 }
+
+.choix.effet {
+    animation: slidedown 1s ease-in-out ;
+    border: 2px solid red;
+    }
+    
+    @keyframes slidedown {
+        from{
+                transform: translateY(15px);
+                opacity: 0;
+        }
+        to {
+                transform: translateY(0);
+                opacity: 1;
+        }
+    }
