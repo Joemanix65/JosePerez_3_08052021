@@ -81,7 +81,7 @@ h4:after{
     }
     }
 .menu-card{
-    
+    border: 2px solid blue;
     @include for-big-desktop{
         display: flex;
         flex-direction: row;

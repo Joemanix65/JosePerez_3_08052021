@@ -1,0 +1,14 @@
+.menu-card_1{
+    border: 2px solid blue;
+    @include for-big-desktop{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+.choix{
+    @include for-big-desktop{
+    width: 30%;
+    }
+}

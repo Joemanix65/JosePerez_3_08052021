@@ -407,6 +407,9 @@ h4:after {
     transform: translateX(10%);
   }
 }
+.menu-card {
+  border: 2px solid blue;
+}
 @media (min-width: 1400px) {
   .menu-card {
     display: flex;
@@ -633,6 +636,23 @@ header {
   font-weight: 300;
   margin-left: 20px;
   margin-bottom: 30px;
+}
+
+.menu-card_1 {
+  border: 2px solid blue;
+}
+@media (min-width: 1400px) {
+  .menu-card_1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1400px) {
+  .choix {
+    width: 30%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
