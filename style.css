@@ -407,9 +407,6 @@ h4:after {
     transform: translateX(10%);
   }
 }
-.menu-card {
-  border: 2px solid blue;
-}
 @media (min-width: 1400px) {
   .menu-card {
     display: flex;
@@ -432,7 +429,7 @@ h4:after {
 }
 @media (min-width: 1400px) {
   .choix {
-    max-width: 380px;
+    max-width: 440px;
   }
 }
 .choix .text-card {
@@ -501,39 +498,43 @@ h4:after {
 }
 
 .effet_0 {
-  animation-duration: 0.4s;
+  animation-duration: 0.3s;
 }
 
 .effet_1 {
-  animation-duration: 0.8s;
+  animation-duration: 0.6s;
 }
 
 .effet_2 {
-  animation-duration: 1.2s;
+  animation-duration: 0.9s;
 }
 
 .effet_3 {
-  animation-duration: 1.6s;
+  animation-duration: 1.2s;
 }
 
 .effet_4 {
-  animation-duration: 2s;
+  animation-duration: 1.5s;
 }
 
 .effet_5 {
-  animation-duration: 2.4s;
+  animation-duration: 1.8s;
 }
 
 .effet_6 {
-  animation-duration: 2.8s;
+  animation-duration: 2.1s;
 }
 
 .effet_7 {
-  animation-duration: 3.2s;
+  animation-duration: 2.4s;
 }
 
 .effet_8 {
-  animation-duration: 3.4s;
+  animation-duration: 2.7s;
+}
+
+.effet_9 {
+  animation-duration: 3s;
 }
 
 @keyframes slideup {
@@ -638,20 +639,18 @@ header {
   margin-bottom: 30px;
 }
 
-.menu-card_1 {
-  border: 2px solid blue;
-}
 @media (min-width: 1400px) {
   .menu-card_1 {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     flex-wrap: wrap;
   }
 }
 
 @media (min-width: 1400px) {
-  .choix {
-    width: 30%;
+  .grow {
+    margin: 20px 30px 0 30px;
   }
 }
 

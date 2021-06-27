@@ -81,7 +81,6 @@ h4:after{
     }
     }
 .menu-card{
-    border: 2px solid blue;
     @include for-big-desktop{
         display: flex;
         flex-direction: row;
@@ -100,7 +99,7 @@ h4:after{
     margin: 20px auto 15px;
     animation: slideup 2s ease-in-out;
     @include for-big-desktop{
-        max-width: 380px; 
+        max-width: 440px; 
     }
 
     .text-card{
@@ -183,39 +182,43 @@ h4:after{
     }
 }
 .effet_0{
-    animation-duration: .4s;  
+    animation-duration: .3s;  
 }   
 
 .effet_1{
-    animation-duration: .8s;  
+    animation-duration: .6s;  
 }   
 
 .effet_2{
-    animation-duration: 1.2s;  
+    animation-duration: .9s;  
 }   
 
 .effet_3{
-    animation-duration: 1.6s;  
+    animation-duration: 1.2s;  
 }   
 
 .effet_4{
-    animation-duration: 2s;  
+    animation-duration: 1.5s;  
 }   
 
 .effet_5{
-    animation-duration: 2.4s;  
+    animation-duration: 1.8s;  
 }   
 
 .effet_6{
-    animation-duration: 2.8s;  
+    animation-duration: 2.1s;  
 }   
 
 .effet_7{
-    animation-duration: 3.2s;  
+    animation-duration: 2.4s;  
 }   
 
 .effet_8{
-    animation-duration: 3.4s;  
+    animation-duration: 2.7s;  
+}   
+
+.effet_9{
+    animation-duration: 3s;  
 }   
 
     @keyframes slideup {
