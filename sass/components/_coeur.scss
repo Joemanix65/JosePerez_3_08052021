@@ -22,7 +22,6 @@
 	top:0;
 	z-index:-1;
 	background: linear-gradient($primarycolor, $secondarycolor);
-	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	opacity:0;
@@ -33,14 +32,10 @@
 .heart:hover .heart-color{
 	transform:scale(1);
 	opacity:1;
-	
-	
 }
   
 .heart:hover{
-	
 	background: linear-gradient($primarycolor, $secondarycolor);
-	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	-webkit-text-stroke: 0px $spfontcolor;

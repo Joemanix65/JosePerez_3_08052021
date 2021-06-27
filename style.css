@@ -133,6 +133,9 @@ img {
   margin-left: 20px;
   box-shadow: 0px 2px 6px 2px #CCCCCC;
 }
+.resto-link:hover {
+  transform: scale(1.02);
+}
 @media (min-width: 768px) {
   .resto-link {
     width: 40%;
@@ -215,7 +218,6 @@ img {
   top: 0;
   z-index: -1;
   background: linear-gradient(#9356DC, #FF79DA);
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0;
@@ -230,7 +232,6 @@ img {
 
 .heart:hover {
   background: linear-gradient(#9356DC, #FF79DA);
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 0px #FFFFFF;

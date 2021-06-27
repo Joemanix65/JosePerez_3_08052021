@@ -74,6 +74,9 @@
     margin-bottom: 20px;
     margin-left: 20px;
     box-shadow: 0px 2px 6px 2px $shadowcolor;
+    &:hover{
+        transform: scale(1.02);
+    }
     @include for-tablet {
        width: 40%;
        flex-wrap: wrap;
