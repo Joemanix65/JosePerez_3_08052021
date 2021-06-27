@@ -1,5 +1,6 @@
 .section-menu{
     width: 100%;
+    max-width: 1400px;
     height: auto;
     background-color: $background1;
     border-radius: 40px 40px 0 0;
@@ -12,6 +13,9 @@
         font-family: $Shrikhand;
         font-weight: 200;
         padding: 40px 0 0 0;
+        @include for-tablet{
+            font-size: 2rem; 
+        }
     }
 }
 
@@ -32,15 +36,23 @@ h4{
 h4:after{
     content: "";
     display: block;
-    width: 10%;
+    width: 9%;
+    max-width: 6%;
     bottom: 0;
     border-bottom: 3px solid $tertiarycolor;
+    @include for-tablet{
+        max-width: 4%; 
+    }
+    @include for-desktop{
+        max-width: 3%; 
+    }
+   
 }
 
 //rotation du check
 @keyframes fa-check {
     0%  { 
-        transform: rotate(180deg);
+        transform: rotate(0deg);
     }
   100%{ 
       transform: rotate(360deg);
@@ -62,41 +74,60 @@ h4:after{
  // déplacement du prix   
 @keyframes prix{
     0% { 
-        transform: translateX(30px); 
+        transform: translateX(40%); 
     }
     100% { 
-        transform: translateX(10px); 
+        transform: translateX(10%); 
     }
     }
-
-.choix.effet{
-    display: flex;
-    border-radius: 15px 15px 15px 15px;
+.menu-card{
+    
+    @include for-big-desktop{
+        display: flex;
+        flex-direction: row;
+    }
+}
+.choix{
+    display: flex;   
+    border-radius: 15px;
     background-color: $spfontcolor;
     box-shadow: 1px 4px 10px $shadowcolor;
     position: relative;
     cursor: pointer;
     overflow: hidden;
-    width: auto;
+    width: 95%;
     height: 70px;
-    margin: 20px 15px 25px 15px;
-    
-    h5{
-        margin: 10px 0 0 10px;
-        font-size: 1.1rem;
-    }
-
-    p{
-        margin-left: 10px;
-        font-size: 0.95rem;
-        
+    margin: 20px auto 15px;
+    animation: slideup 2s ease-in-out;
+    @include for-big-desktop{
+        max-width: 380px; 
     }
 
     .text-card{
-        position: relative;
-        width: 70%;
-        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 80%;
+        white-space: nowrap;
+        overflow: hidden;
        
+        h5 {
+            margin: 10px 0 0 10px;
+            font-size: 1.1rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            
+        }
+
+        p {
+            margin: 0 0 10px 10px;
+            font-size: .9rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            
+        }
     }
 
     .fa-check-circle{
@@ -111,19 +142,18 @@ h4:after{
         margin-top: 35px;
         font-weight: 600;
         font-size: 1rem;
+        
     }
 
     &:hover{
-        
-       
-
         .prix{
-            animation: prix ease .6s;
+            animation: prix ease-in-out .3s;
             animation-fill-mode: forwards;
             animation-iteration-count: 1;
             right: 5px;
             float: right;
             position: static;
+            width: 40%;
         }
 
         .valid-check-mover{
@@ -149,17 +179,48 @@ h4:after{
             top: 40%;
             visibility: visible;
         }
+        
     }
 }
+.effet_0{
+    animation-duration: .4s;  
+}   
 
-.choix.effet {
-    animation: slidedown 1s ease-in-out ;
-    border: 2px solid red;
-    }
-    
-    @keyframes slidedown {
+.effet_1{
+    animation-duration: .8s;  
+}   
+
+.effet_2{
+    animation-duration: 1.2s;  
+}   
+
+.effet_3{
+    animation-duration: 1.6s;  
+}   
+
+.effet_4{
+    animation-duration: 2s;  
+}   
+
+.effet_5{
+    animation-duration: 2.4s;  
+}   
+
+.effet_6{
+    animation-duration: 2.8s;  
+}   
+
+.effet_7{
+    animation-duration: 3.2s;  
+}   
+
+.effet_8{
+    animation-duration: 3.4s;  
+}   
+
+    @keyframes slideup {
         from{
-                transform: translateY(15px);
+                transform: translateY(20px);
                 opacity: 0;
         }
         to {
@@ -167,3 +228,5 @@ h4:after{
                 opacity: 1;
         }
     }
+    
+   

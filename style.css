@@ -11,7 +11,7 @@ body {
 }
 @media (min-width: 1400px) {
   body {
-    width: 1300px;
+    width: 1400px;
     margin: auto;
   }
 }
@@ -328,6 +328,7 @@ img {
 
 .section-menu {
   width: 100%;
+  max-width: 1400px;
   height: auto;
   background-color: #F6F6F6;
   border-radius: 40px 40px 0 0;
@@ -341,6 +342,11 @@ img {
   font-family: "Shrikhand", cursive;
   font-weight: 200;
   padding: 40px 0 0 0;
+}
+@media (min-width: 768px) {
+  .section-menu h1 {
+    font-size: 2rem;
+  }
 }
 
 .titre-menu {
@@ -359,14 +365,25 @@ h4 {
 h4:after {
   content: "";
   display: block;
-  width: 10%;
+  width: 9%;
+  max-width: 6%;
   bottom: 0;
   border-bottom: 3px solid #99E2D0;
+}
+@media (min-width: 768px) {
+  h4:after {
+    max-width: 4%;
+  }
+}
+@media (min-width: 1200px) {
+  h4:after {
+    max-width: 3%;
+  }
 }
 
 @keyframes fa-check {
   0% {
-    transform: rotate(180deg);
+    transform: rotate(0deg);
   }
   100% {
     transform: rotate(360deg);
@@ -384,56 +401,80 @@ h4:after {
 }
 @keyframes prix {
   0% {
-    transform: translateX(30px);
+    transform: translateX(40%);
   }
   100% {
-    transform: translateX(10px);
+    transform: translateX(10%);
   }
 }
-.choix.effet {
+@media (min-width: 1400px) {
+  .menu-card {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.choix {
   display: flex;
-  border-radius: 15px 15px 15px 15px;
+  border-radius: 15px;
   background-color: #FFFFFF;
   box-shadow: 1px 4px 10px #CCCCCC;
   position: relative;
   cursor: pointer;
   overflow: hidden;
-  width: auto;
+  width: 95%;
   height: 70px;
-  margin: 20px 15px 25px 15px;
+  margin: 20px auto 15px;
+  animation: slideup 2s ease-in-out;
 }
-.choix.effet h5 {
+@media (min-width: 1400px) {
+  .choix {
+    max-width: 380px;
+  }
+}
+.choix .text-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.choix .text-card h5 {
   margin: 10px 0 0 10px;
   font-size: 1.1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.choix.effet p {
-  margin-left: 10px;
-  font-size: 0.95rem;
+.choix .text-card p {
+  margin: 0 0 10px 10px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.choix.effet .text-card {
-  position: relative;
-  width: 70%;
-}
-.choix.effet .fa-check-circle {
+.choix .fa-check-circle {
   position: absolute;
   visibility: hidden;
 }
-.choix.effet .prix {
+.choix .prix {
   position: absolute;
   right: 30px;
   margin-top: 35px;
   font-weight: 600;
   font-size: 1rem;
 }
-.choix.effet:hover .prix {
-  animation: prix ease 0.6s;
+.choix:hover .prix {
+  animation: prix ease-in-out 0.3s;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
   right: 5px;
   float: right;
   position: static;
+  width: 40%;
 }
-.choix.effet:hover .valid-check-mover {
+.choix:hover .valid-check-mover {
   animation: valid-check ease-in-out 0.3s;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
@@ -443,7 +484,7 @@ h4:after {
   width: 80px;
   height: 70px;
 }
-.choix.effet:hover .fa-check-circle {
+.choix:hover .fa-check-circle {
   animation: fa-check 0.4s linear infinite;
   animation-iteration-count: 1;
   background-color: #99E2D0;
@@ -456,14 +497,45 @@ h4:after {
   visibility: visible;
 }
 
-.choix.effet {
-  animation: slidedown 1s ease-in-out;
-  border: 2px solid red;
+.effet_0 {
+  animation-duration: 0.4s;
 }
 
-@keyframes slidedown {
+.effet_1 {
+  animation-duration: 0.8s;
+}
+
+.effet_2 {
+  animation-duration: 1.2s;
+}
+
+.effet_3 {
+  animation-duration: 1.6s;
+}
+
+.effet_4 {
+  animation-duration: 2s;
+}
+
+.effet_5 {
+  animation-duration: 2.4s;
+}
+
+.effet_6 {
+  animation-duration: 2.8s;
+}
+
+.effet_7 {
+  animation-duration: 3.2s;
+}
+
+.effet_8 {
+  animation-duration: 3.4s;
+}
+
+@keyframes slideup {
   from {
-    transform: translateY(15px);
+    transform: translateY(20px);
     opacity: 0;
   }
   to {
@@ -486,13 +558,18 @@ header {
 }
 
 .fa-arrow-left {
-  position: fixed;
+  position: absolute;
   top: 30px;
   left: 20px;
 }
+@media (min-width: 1400px) {
+  .fa-arrow-left {
+    margin-left: 300px;
+  }
+}
 
 .img-menu {
-  max-width: 1300px;
+  max-width: 1400px;
   max-height: 400px;
   object-fit: cover;
   position: absolute;

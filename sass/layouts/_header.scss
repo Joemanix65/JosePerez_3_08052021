@@ -13,13 +13,16 @@ header{
 }
 
 .fa-arrow-left{
-    position: fixed;
+    position: absolute;
     top: 30px;
     left: 20px;
+    @include for-big-desktop{
+        margin-left: 300px;
     }
+}
    
 .img-menu{
-    max-width: 1300px;
+    max-width: 1400px;
     max-height: 400px;
     object-fit: cover;
     position:absolute;
