@@ -249,6 +249,7 @@ img {
   animation: loading 2s linear;
   pointer-events: none;
   top: 0;
+  left: 0;
 }
 
 .loader {
@@ -470,13 +471,11 @@ h4:after {
   animation: prix ease-in-out 0.3s;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
-  right: 5px;
-  float: right;
   position: static;
   width: 40%;
 }
 .choix:hover .valid-check-mover {
-  animation: valid-check ease-in-out 0.3s;
+  animation: valid-check ease-in-out 0.4s;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
   background-color: #99E2D0;
@@ -486,7 +485,7 @@ h4:after {
   height: 70px;
 }
 .choix:hover .fa-check-circle {
-  animation: fa-check 0.4s linear infinite;
+  animation: fa-check 0.3s linear infinite;
   animation-iteration-count: 1;
   background-color: #99E2D0;
   color: #FFFFFF;

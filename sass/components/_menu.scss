@@ -81,6 +81,7 @@ h4:after{
     }
     }
 .menu-card{
+    
     @include for-big-desktop{
         display: flex;
         flex-direction: row;
@@ -98,6 +99,7 @@ h4:after{
     height: 70px;
     margin: 20px auto 15px;
     animation: slideup 2s ease-in-out;
+    
     @include for-big-desktop{
         max-width: 440px; 
     }
@@ -109,7 +111,7 @@ h4:after{
         width: 80%;
         white-space: nowrap;
         overflow: hidden;
-       
+        
         h5 {
             margin: 10px 0 0 10px;
             font-size: 1.1rem;
@@ -143,20 +145,18 @@ h4:after{
         font-size: 1rem;
         
     }
-
+   
     &:hover{
         .prix{
             animation: prix ease-in-out .3s;
             animation-fill-mode: forwards;
             animation-iteration-count: 1;
-            right: 5px;
-            float: right;
             position: static;
             width: 40%;
         }
 
         .valid-check-mover{
-            animation: valid-check ease-in-out .3s;
+            animation: valid-check ease-in-out .4s;
             animation-fill-mode: forwards;
             animation-iteration-count: 1;
             background-color: $tertiarycolor;
@@ -167,7 +167,7 @@ h4:after{
         }
 
         .fa-check-circle{
-            animation: fa-check .4s linear infinite; 
+            animation: fa-check .3s linear infinite; 
             animation-iteration-count: 1;
             background-color: $tertiarycolor;
             color: $spfontcolor;
@@ -231,5 +231,3 @@ h4:after{
                 opacity: 1;
         }
     }
-    
-   
